@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📸 Galería — Nuestra Boda</title>
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="contenedor">
+  <h1>🎉 ¡Bienvenidos a Nuestra Boda! 📸</h1>
+  <p class="subtitulo">Sube tu foto y mira las de todos — ¡Nadie puede borrar nada! ✨</p>
+
+  <!-- 📤 ÁREA DE SUBIDA -->
+  <div class="caja-subida">
+    <h3>📷 Sube tu foto aquí</h3>
+    <br>
+    <input type="file" id="archivo" accept="image/*">
+    <button class="boton-subir" onclick="document.getElementById('archivo').click()">
+      📎 Seleccionar foto
+    </button>
+    <p id="mensaje"></p>
+  </div>
+
+  <!-- 🔄 Botón de recarga -->
+  <button class="boton-recargar" onclick="cargarGaleria()">🔄 Actualizar fotos</button>
+
+  <!-- 📸 GALERÍA -->
+  <h2>📸 Todas las fotos</h2>
+  <div class="galeria" id="galeria">
+    <p class="vacio">Aún no hay fotos — ¡Sé el primero en subir! 📷</p>
+  </div>
+</div>
+
+<!-- Script externo -->
+<script src="script.js" defer></script>
+</body>
+</html>
