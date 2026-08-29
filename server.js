@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000; // 🔧 Render necesita esta línea
 
 // Configuración de Multer para guardar fotos en "uploads"
 const storage = multer.diskStorage({
@@ -19,6 +19,11 @@ const upload = multer({ storage });
 
 // Servir archivos estáticos (HTML, CSS, JS)
 app.use(express.static('public'));
+
+// Ruta principal que manda el index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Ruta para subir fotos
 app.post('/upload', upload.single('foto'), (req, res) => {
