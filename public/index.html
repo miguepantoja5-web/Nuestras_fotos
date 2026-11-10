@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📸 Galería — Nuestra Boda</title>
-  <!-- Estilos externos -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Nuestros Recuerdos ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="contenedor">
-  <h1>🎉 ¡Bienvenidos a Nuestra Boda! 📸</h1>
-  <p class="subtitulo">Sube tu foto y mira las de todos — ¡Nadie puede borrar nada! ✨</p>
+    <div class="contenedor">
 
-  <!-- 📤 ÁREA DE SUBIDA -->
-  <div class="caja-subida">
-    <h3>📷 Sube tu foto aquí</h3>
-    <br>
-    <input type="file" id="archivo" accept="image/*">
-    <button class="boton-subir" onclick="document.getElementById('archivo').click()">
-      📎 Seleccionar foto
-    </button>
-    <p id="mensaje"></p>
-  </div>
+        <section class="hero">
 
-  <!-- 🔄 Botón de recarga -->
-  <button class="boton-recargar" onclick="cargarGaleria()">🔄 Actualizar fotos</button>
+            <h1 class="titulo-principal">
+                ❤️ Nuestros Recuerdos ❤️
+            </h1>
 
-  <!-- 📸 GALERÍA -->
-  <h2>📸 Todas las fotos</h2>
-  <div class="galeria" id="galeria">
-    <p class="vacio">Aún no hay fotos — ¡Sé el primero en subir! 📷</p>
-  </div>
-</div>
+            <p class="nombres">
+                Miguel & Ana Elena
+            </p>
 
-<!-- Script externo -->
-<script src="script.js" defer></script>
-</body>
-</html>
+            <p class="descripcion">
+                Cada fotografía guarda una historia,
+                una sonrisa y un momento especial para recordar siempre.
+            </p>
+
+        </section>
+
+        <section class="caja-subida">
+
+            <h2>📸 Comparte un nuevo recuerdo</h2>
+
+            <p class="texto-subida">
+                Sube tus fotografías favoritas para que formen parte de nuestra historia.
+            </p>
+
+            <input type="file" id="archivo" accept="image/*">
+
+            <button
+                class="boton-subir"
+                onclick="document.getElementById('archivo').click()">
+
+                ❤️ Seleccionar fotografía
+
+            </button>
+
+            <p id="mensaje"></p>
+
+        </section>
+
+        <div class="titulo-galeria">
+
+            <h2>✨ Nuestra Galería ✨</h2>
+
+            <p>
+                Cada imagen representa un momento especial de nuestra historia.
+            </p>
+
+        </div>
