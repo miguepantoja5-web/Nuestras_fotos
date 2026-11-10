@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>❤️ Nuestros Recuerdos ❤️</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +12,6 @@
     <div class="contenedor">
 
         <section class="hero">
-
             <h1 class="titulo-principal">
                 ❤️ Nuestros Recuerdos ❤️
             </h1>
@@ -27,11 +24,9 @@
                 Cada fotografía guarda una historia,
                 una sonrisa y un momento especial para recordar siempre.
             </p>
-
         </section>
 
         <section class="caja-subida">
-
             <h2>📸 Comparte un nuevo recuerdo</h2>
 
             <p class="texto-subida">
@@ -43,21 +38,39 @@
             <button
                 class="boton-subir"
                 onclick="document.getElementById('archivo').click()">
-
                 ❤️ Seleccionar fotografía
-
             </button>
 
             <p id="mensaje"></p>
-
         </section>
 
         <div class="titulo-galeria">
-
             <h2>✨ Nuestra Galería ✨</h2>
 
             <p>
                 Cada imagen representa un momento especial de nuestra historia.
             </p>
-
         </div>
+
+        <!-- GALERÍA -->
+        <div id="galeria" class="galeria"></div>
+
+    </div>
+
+    <!-- VISOR DE IMAGEN -->
+    <div id="visor" class="visor">
+
+        <span id="cerrarVisor">&times;</span>
+
+        <img
+            id="imagenGrande"
+            src=""
+            alt="Imagen ampliada">
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
